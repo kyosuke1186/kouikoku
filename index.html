@@ -3,181 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>広告CSV整形ツール | HYPER NEON BURST MODE</title>
+<title>広告CSV整形ツール | OMEGA HYPER NEON OVERDRIVE MAX</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg0: #030307;
-    --bg1: #090014;
-    --bg2: #140022;
-    --bg3: #1f0033;
-    --pink: #ff1e8a;
-    --pink2: #ff73c7;
-    --cyan: #00eaff;
-    --cyan2: #8ff7ff;
-    --purple: #8b2cff;
-    --purple2: #c36bff;
-    --green: #4dff88;
-    --yellow: #fff06a;
-    --red: #ff476d;
-    --text: #fdfaff;
-    --muted: #dacff4;
-  }
-
-  @keyframes bgHue {
-    0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(24deg); }
-  }
-
-  @keyframes gridMoveA {
-    0% { background-position: 0 0, 0 0; }
-    100% { background-position: 0 80px, 80px 0; }
-  }
-
-  @keyframes pulseGlow {
-    0%,100% {
-      box-shadow:
-        0 0 18px rgba(255,30,138,.22),
-        0 0 36px rgba(0,234,255,.10),
-        0 20px 40px rgba(0,0,0,.32);
-    }
-    50% {
-      box-shadow:
-        0 0 28px rgba(255,30,138,.34),
-        0 0 56px rgba(0,234,255,.18),
-        0 24px 48px rgba(0,0,0,.38);
-    }
-  }
-
-  @keyframes neonText {
-    0%,100% {
-      text-shadow:
-        0 0 8px rgba(255,255,255,.40),
-        0 0 18px rgba(255,30,138,.42),
-        0 0 34px rgba(0,234,255,.14);
-    }
-    50% {
-      text-shadow:
-        0 0 12px rgba(255,255,255,.55),
-        0 0 26px rgba(255,30,138,.60),
-        0 0 48px rgba(0,234,255,.24);
-    }
-  }
-
-  @keyframes scanMove {
-    0% { transform: translateY(-120%); }
-    100% { transform: translateY(120vh); }
-  }
-
-  @keyframes orbFloat1 {
-    0%,100% { transform: translate(0,0) scale(1); }
-    50% { transform: translate(40px,50px) scale(1.15); }
-  }
-
-  @keyframes orbFloat2 {
-    0%,100% { transform: translate(0,0) scale(1); }
-    50% { transform: translate(-35px,30px) scale(1.2); }
-  }
-
-  @keyframes orbFloat3 {
-    0%,100% { transform: translate(0,0) scale(1); }
-    50% { transform: translate(20px,-30px) scale(1.12); }
-  }
-
-  @keyframes spinBorder {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes shimmer {
-    0% { transform: translateX(-140%); }
-    100% { transform: translateX(140%); }
-  }
-
-  @keyframes glitchA {
-    0%,100% { transform: translate(0); clip-path: inset(0 0 0 0); }
-    20% { transform: translate(-2px, 1px); clip-path: inset(0 0 68% 0); }
-    40% { transform: translate(2px, -1px); clip-path: inset(38% 0 24% 0); }
-    60% { transform: translate(-1px, 1px); clip-path: inset(72% 0 0 0); }
-    80% { transform: translate(1px, 0); clip-path: inset(12% 0 50% 0); }
-  }
-
-  @keyframes buttonGlow {
-    0%,100% { box-shadow: 0 0 16px rgba(255,30,138,.20), 0 8px 22px rgba(0,0,0,.24); }
-    50% { box-shadow: 0 0 28px rgba(0,234,255,.22), 0 10px 26px rgba(0,0,0,.28); }
-  }
-
-  @keyframes rowEnter {
-    0% {
-      opacity: 0;
-      transform: translateY(10px) scale(.985);
-      box-shadow: 0 0 0 rgba(0,0,0,0);
-      filter: brightness(1.8);
-    }
-    45% {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-      box-shadow: 0 0 22px rgba(0,234,255,.14);
-      filter: brightness(1.3);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-      box-shadow: 0 0 0 rgba(0,0,0,0);
-      filter: brightness(1);
-    }
-  }
-
-  @keyframes burstRing {
-    0% {
-      opacity: .95;
-      transform: translate(-50%, -50%) scale(.2);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(2.4);
-    }
-  }
-
-  @keyframes burstCore {
-    0% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(.2);
-      filter: blur(0px);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(3.2);
-      filter: blur(14px);
-    }
-  }
-
-  @keyframes popParticle {
-    0% {
-      opacity: 1;
-      transform: translate(0, 0) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(var(--dx), var(--dy)) scale(.2);
-    }
-  }
-
-  @keyframes flashOut {
-    0% { opacity: .55; }
-    100% { opacity: 0; }
-  }
-
-  @keyframes clickRipple {
-    0% {
-      opacity: .9;
-      transform: translate(-50%, -50%) scale(.25);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(2.2);
-    }
+    --bg0: #020204;
+    --bg1: #070010;
+    --bg2: #150026;
+    --bg3: #22003c;
+    --bg4: #2f0052;
+    --pink: #ff008c;
+    --pink2: #ff5cc0;
+    --cyan: #00f6ff;
+    --cyan2: #92ffff;
+    --purple: #8d00ff;
+    --yellow: #fff36f;
+    --red: #ff456a;
+    --green: #58ff8f;
+    --text: #fffbff;
+    --muted: #eadcff;
   }
 
   html, body {
@@ -192,11 +37,11 @@
     color: var(--text);
     font-family: 'Courier New', Menlo, monospace;
     background:
-      radial-gradient(circle at 14% 18%, rgba(255,30,138,.18), transparent 16%),
-      radial-gradient(circle at 86% 16%, rgba(0,234,255,.14), transparent 16%),
-      radial-gradient(circle at 50% 110%, rgba(139,44,255,.22), transparent 26%),
-      linear-gradient(135deg, #030307 0%, #090014 28%, #140022 62%, #1f0033 100%);
-    animation: bgHue 10s ease-in-out infinite alternate;
+      radial-gradient(circle at 8% 12%, rgba(255,0,140,.28), transparent 14%),
+      radial-gradient(circle at 90% 10%, rgba(0,246,255,.22), transparent 16%),
+      radial-gradient(circle at 50% 112%, rgba(141,0,255,.34), transparent 28%),
+      linear-gradient(135deg, var(--bg0) 0%, var(--bg1) 18%, var(--bg2) 46%, var(--bg3) 72%, var(--bg4) 100%);
+    animation: hueShift 8s ease-in-out infinite alternate;
   }
 
   body::before {
@@ -205,12 +50,14 @@
     inset: 0;
     pointer-events: none;
     background:
-      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-    background-size: 80px 80px, 80px 80px;
-    opacity: .20;
+      linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(45deg, rgba(255,0,140,.06), rgba(0,246,255,.05)),
+      linear-gradient(-45deg, rgba(141,0,255,.04), transparent 65%);
+    background-size: 100px 100px, 100px 100px, 220px 220px, 320px 320px;
+    opacity: .24;
     mix-blend-mode: screen;
-    animation: gridMoveA 7s linear infinite;
+    animation: gridMove 4.6s linear infinite;
   }
 
   body::after {
@@ -218,74 +65,378 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: -140px;
-    height: 160px;
+    top: -240px;
+    height: 280px;
     pointer-events: none;
     background: linear-gradient(
       to bottom,
       rgba(255,255,255,0),
-      rgba(0,234,255,.08),
-      rgba(255,30,138,.10),
+      rgba(0,246,255,.15),
+      rgba(255,0,140,.17),
       rgba(255,255,255,0)
     );
-    filter: blur(10px);
-    animation: scanMove 4.2s linear infinite;
-    opacity: .75;
+    filter: blur(14px);
+    animation: scanMove 3s linear infinite;
+    opacity: .95;
+  }
+
+  @keyframes hueShift {
+    0% { filter: hue-rotate(0deg) saturate(1.08) brightness(1); }
+    100% { filter: hue-rotate(42deg) saturate(1.3) brightness(1.05); }
+  }
+
+  @keyframes gridMove {
+    0% { background-position: 0 0, 0 0, 0 0, 0 0; }
+    100% { background-position: 0 120px, 120px 0, 90px 90px, -80px 80px; }
+  }
+
+  @keyframes scanMove {
+    0% { transform: translateY(-140%); opacity: .25; }
+    20% { opacity: .95; }
+    100% { transform: translateY(150vh); opacity: .18; }
+  }
+
+  @keyframes pulseGlow {
+    0%,100% {
+      box-shadow:
+        0 0 18px rgba(255,0,140,.26),
+        0 0 42px rgba(0,246,255,.16),
+        0 0 88px rgba(141,0,255,.14),
+        0 22px 42px rgba(0,0,0,.34);
+    }
+    50% {
+      box-shadow:
+        0 0 34px rgba(255,0,140,.46),
+        0 0 76px rgba(0,246,255,.28),
+        0 0 132px rgba(141,0,255,.22),
+        0 28px 52px rgba(0,0,0,.40);
+    }
+  }
+
+  @keyframes heavyGlow {
+    0%,100% {
+      box-shadow:
+        0 0 26px rgba(255,0,140,.32),
+        0 0 58px rgba(0,246,255,.20),
+        0 0 110px rgba(141,0,255,.18),
+        0 0 180px rgba(255,0,140,.06),
+        0 24px 48px rgba(0,0,0,.42);
+    }
+    50% {
+      box-shadow:
+        0 0 40px rgba(255,0,140,.52),
+        0 0 88px rgba(0,246,255,.30),
+        0 0 146px rgba(141,0,255,.25),
+        0 0 220px rgba(0,246,255,.08),
+        0 30px 56px rgba(0,0,0,.48);
+    }
+  }
+
+  @keyframes neonText {
+    0%,100% {
+      text-shadow:
+        0 0 8px rgba(255,255,255,.55),
+        0 0 20px rgba(255,0,140,.58),
+        0 0 46px rgba(0,246,255,.22),
+        0 0 84px rgba(141,0,255,.12);
+    }
+    50% {
+      text-shadow:
+        0 0 12px rgba(255,255,255,.82),
+        0 0 30px rgba(255,0,140,.88),
+        0 0 62px rgba(0,246,255,.34),
+        0 0 108px rgba(141,0,255,.20);
+    }
+  }
+
+  @keyframes glitchA {
+    0%,100% { transform: translate(0); clip-path: inset(0 0 0 0); }
+    10% { transform: translate(-3px, 1px); clip-path: inset(0 0 68% 0); }
+    25% { transform: translate(3px, -1px); clip-path: inset(38% 0 24% 0); }
+    45% { transform: translate(-2px, 2px); clip-path: inset(72% 0 0 0); }
+    62% { transform: translate(2px, 0); clip-path: inset(12% 0 50% 0); }
+    78% { transform: translate(-1px, -1px); clip-path: inset(24% 0 30% 0); }
+  }
+
+  @keyframes borderFlicker {
+    0%,100% { opacity: .92; }
+    8% { opacity: .58; }
+    10% { opacity: 1; }
+    26% { opacity: .80; }
+    28% { opacity: 1; }
+    60% { opacity: .74; }
+    62% { opacity: 1; }
+  }
+
+  @keyframes spinBorder {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.04); }
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    100% { transform: translateX(220%) skewX(-20deg); }
+  }
+
+  @keyframes rowEnter {
+    0% {
+      opacity: 0;
+      transform: translateY(12px) scale(.975);
+      filter: brightness(2.2) saturate(1.6);
+    }
+    40% {
+      opacity: 1;
+      transform: translateY(0) scale(1.012);
+      filter: brightness(1.5) saturate(1.35);
+      box-shadow: 0 0 28px rgba(0,246,255,.18);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: brightness(1) saturate(1);
+      box-shadow: none;
+    }
+  }
+
+  @keyframes numberFlash {
+    0% { filter: brightness(2.2) saturate(1.5); }
+    100% { filter: brightness(1) saturate(1); }
+  }
+
+  @keyframes buttonGlow {
+    0%,100% {
+      box-shadow:
+        0 0 18px rgba(255,0,140,.24),
+        0 0 30px rgba(0,246,255,.14),
+        0 8px 22px rgba(0,0,0,.24);
+    }
+    50% {
+      box-shadow:
+        0 0 28px rgba(255,0,140,.40),
+        0 0 48px rgba(0,246,255,.28),
+        0 10px 28px rgba(0,0,0,.28);
+    }
+  }
+
+  @keyframes loadingSpin {
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes dragWarningPulse {
+    0%,100% { opacity: .76; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.03); }
+  }
+
+  @keyframes orbFloat1 {
+    0%,100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(65px,72px) scale(1.24); }
+  }
+
+  @keyframes orbFloat2 {
+    0%,100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(-55px,48px) scale(1.28); }
+  }
+
+  @keyframes orbFloat3 {
+    0%,100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(40px,-46px) scale(1.22); }
+  }
+
+  @keyframes flashOut {
+    0% { opacity: .62; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes burstRing {
+    0% {
+      opacity: .96;
+      transform: translate(-50%, -50%) scale(.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(3.2);
+    }
+  }
+
+  @keyframes burstCore {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(.2);
+      filter: blur(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(4.1);
+      filter: blur(18px);
+    }
+  }
+
+  @keyframes popParticle {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(var(--dx), var(--dy)) scale(.2);
+    }
+  }
+
+  @keyframes clickRipple {
+    0% {
+      opacity: .95;
+      transform: translate(-50%, -50%) scale(.25);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2.7);
+    }
+  }
+
+  @keyframes lightningFlash {
+    0%, 100% { opacity: 0; }
+    5% { opacity: .82; }
+    7% { opacity: 0; }
+    9% { opacity: .46; }
+    12% { opacity: 0; }
+  }
+
+  @keyframes progressMove {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(300%); }
+  }
+
+  @keyframes hudBlink {
+    0%,100% { opacity: .92; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes glitchNoise {
+    0%,100% { opacity: 0; }
+    10% { opacity: .04; }
+    11% { opacity: 0; }
+    45% { opacity: .03; }
+    46% { opacity: 0; }
+    78% { opacity: .05; }
+    79% { opacity: 0; }
+  }
+
+  @keyframes totalPulse {
+    0%,100% {
+      box-shadow: inset 0 0 0 999px rgba(255,255,255,.02), 0 0 18px rgba(255,243,111,.08);
+    }
+    50% {
+      box-shadow: inset 0 0 0 999px rgba(255,255,255,.04), 0 0 34px rgba(255,243,111,.14), 0 0 48px rgba(255,0,140,.06);
+    }
+  }
+
+  .noise-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 12;
+    opacity: 0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,.18) 0 1px, transparent 1px),
+      radial-gradient(circle at 80% 40%, rgba(255,255,255,.12) 0 1px, transparent 1px),
+      radial-gradient(circle at 50% 80%, rgba(255,255,255,.12) 0 1px, transparent 1px);
+    background-size: 4px 4px, 6px 6px, 5px 5px;
+    mix-blend-mode: screen;
+    animation: glitchNoise 2.2s infinite;
+  }
+
+  .edge-deco {
+    position: fixed;
+    pointer-events: none;
+    z-index: 16;
+    border: 1px solid rgba(255,255,255,.12);
+    box-shadow:
+      0 0 18px rgba(255,0,140,.10),
+      0 0 28px rgba(0,246,255,.08);
+  }
+
+  .edge-top-right {
+    top: 14px;
+    right: 14px;
+    width: 130px;
+    height: 26px;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 14px 0 0;
+  }
+
+  .edge-bottom-left {
+    left: 14px;
+    bottom: 14px;
+    width: 130px;
+    height: 26px;
+    border-right: none;
+    border-top: none;
+    border-radius: 0 0 0 14px;
   }
 
   .bg-orb {
     position: fixed;
     border-radius: 50%;
     pointer-events: none;
-    filter: blur(50px);
-    opacity: .28;
+    filter: blur(60px);
+    opacity: .34;
     mix-blend-mode: screen;
   }
 
   .orb1 {
-    width: 220px;
-    height: 220px;
-    left: 4%;
-    top: 10%;
-    background: rgba(255,30,138,.70);
-    animation: orbFloat1 8s ease-in-out infinite;
+    width: 260px;
+    height: 260px;
+    left: 3%;
+    top: 8%;
+    background: rgba(255,0,140,.82);
+    animation: orbFloat1 7s ease-in-out infinite;
   }
 
   .orb2 {
-    width: 260px;
-    height: 260px;
-    right: 6%;
-    top: 16%;
-    background: rgba(0,234,255,.65);
-    animation: orbFloat2 10s ease-in-out infinite;
+    width: 310px;
+    height: 310px;
+    right: 4%;
+    top: 14%;
+    background: rgba(0,246,255,.78);
+    animation: orbFloat2 9s ease-in-out infinite;
   }
 
   .orb3 {
-    width: 300px;
-    height: 300px;
-    left: 34%;
-    bottom: -60px;
-    background: rgba(139,44,255,.60);
-    animation: orbFloat3 9s ease-in-out infinite;
+    width: 360px;
+    height: 360px;
+    left: 30%;
+    bottom: -90px;
+    background: rgba(141,0,255,.76);
+    animation: orbFloat3 8s ease-in-out infinite;
   }
 
-  #particle-canvas {
+  #particle-canvas,
+  #lightning-canvas {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    opacity: .6;
+  }
+
+  #particle-canvas {
+    opacity: .8;
+  }
+
+  #lightning-canvas {
+    opacity: .95;
+    mix-blend-mode: screen;
   }
 
   .cursor-glow {
     position: fixed;
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(0,234,255,.16) 0%, rgba(255,30,138,.10) 35%, rgba(255,255,255,0) 72%);
-    filter: blur(16px);
-    z-index: 2;
+    background: radial-gradient(circle, rgba(0,246,255,.24) 0%, rgba(255,0,140,.18) 30%, rgba(141,0,255,.12) 48%, rgba(255,255,255,0) 72%);
+    filter: blur(22px);
+    z-index: 14;
     mix-blend-mode: screen;
   }
 
@@ -296,7 +447,7 @@
     z-index: 90;
     opacity: 0;
     background:
-      radial-gradient(circle at center, rgba(255,255,255,.18), rgba(0,234,255,.10), rgba(255,30,138,.08), transparent 58%);
+      radial-gradient(circle at center, rgba(255,255,255,.22), rgba(0,246,255,.14), rgba(255,0,140,.12), transparent 58%);
   }
 
   .screen-flash.active {
@@ -320,49 +471,128 @@
   }
 
   .burst-ring {
-    width: 160px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
-    border: 2px solid rgba(0,234,255,.95);
+    border: 2px solid rgba(0,246,255,.98);
     box-shadow:
-      0 0 20px rgba(0,234,255,.45),
-      0 0 34px rgba(255,30,138,.25);
-    animation: burstRing .7s ease-out forwards;
+      0 0 26px rgba(0,246,255,.60),
+      0 0 42px rgba(255,0,140,.38);
+    animation: burstRing .82s ease-out forwards;
   }
 
   .burst-core {
-    width: 60px;
-    height: 60px;
+    width: 74px;
+    height: 74px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,.95), rgba(0,234,255,.55), rgba(255,30,138,.25), transparent 72%);
-    animation: burstCore .7s ease-out forwards;
+    background: radial-gradient(circle, rgba(255,255,255,.96), rgba(0,246,255,.58), rgba(255,0,140,.26), transparent 72%);
+    animation: burstCore .82s ease-out forwards;
   }
 
   .burst-particle {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #fff;
-    box-shadow:
-      0 0 12px rgba(255,255,255,.55),
-      0 0 18px rgba(0,234,255,.35);
-    animation: popParticle .8s ease-out forwards;
+    animation: popParticle .9s ease-out forwards;
   }
 
   .btn-ripple {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 2px solid rgba(255,255,255,.72);
+    border: 2px solid rgba(255,255,255,.78);
     box-shadow:
       0 0 16px rgba(255,255,255,.28),
-      0 0 26px rgba(0,234,255,.22);
+      0 0 28px rgba(0,246,255,.22);
     animation: clickRipple .55s ease-out forwards;
+  }
+
+  .drag-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      radial-gradient(circle, rgba(0,246,255,.14), rgba(255,0,140,.12), rgba(0,0,0,.80));
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .18s ease;
+    z-index: 80;
+  }
+
+  .drag-overlay.active {
+    opacity: 1;
+  }
+
+  .drag-overlay-inner {
+    border: 2px solid rgba(255,255,255,.20);
+    background: rgba(255,255,255,.06);
+    backdrop-filter: blur(16px);
+    border-radius: 26px;
+    padding: 32px 38px;
+    animation: dragWarningPulse 1.2s ease-in-out infinite;
+    box-shadow:
+      0 0 28px rgba(255,0,140,.18),
+      0 0 54px rgba(0,246,255,.12);
+  }
+
+  .drag-overlay-text {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: .18em;
+    color: #fff;
+    animation: neonText 1.2s ease-in-out infinite;
+  }
+
+  .drag-overlay-sub {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #f7eaff;
+    letter-spacing: .15em;
+  }
+
+  .hud {
+    position: fixed;
+    z-index: 20;
+    pointer-events: none;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(12px);
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,.04),
+      0 0 18px rgba(255,0,140,.10),
+      0 0 28px rgba(0,246,255,.08);
+    animation: hudBlink 1.6s ease-in-out infinite;
+  }
+
+  .hud-top-left {
+    top: 14px;
+    left: 14px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .hud-bottom-right {
+    right: 14px;
+    bottom: 14px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: .12em;
+    text-transform: uppercase;
   }
 
   .shell {
     position: relative;
-    z-index: 3;
+    z-index: 18;
     max-width: 1260px;
     margin: 0 auto;
   }
@@ -372,11 +602,14 @@
   .results-header .count,
   table,
   .legend,
-  .format-preview {
+  .format-preview,
+  .status-line,
+  .loading-state,
+  .progress-wrap {
     position: relative;
-    background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
-    border: 1px solid rgba(255,255,255,.16);
-    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.05));
+    border: 1px solid rgba(255,255,255,.18);
+    backdrop-filter: blur(16px);
   }
 
   .header {
@@ -384,12 +617,7 @@
     padding: 24px 26px;
     border-radius: 20px;
     overflow: hidden;
-    animation: pulseGlow 2.6s ease-in-out infinite;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.04) inset,
-      0 0 24px rgba(255,30,138,.18),
-      0 0 42px rgba(0,234,255,.10),
-      0 20px 40px rgba(0,0,0,.32);
+    animation: heavyGlow 2.1s ease-in-out infinite;
   }
 
   .header::before {
@@ -398,30 +626,20 @@
     inset: -1px;
     border-radius: 20px;
     padding: 1px;
-    background: linear-gradient(135deg, rgba(255,30,138,.95), rgba(0,234,255,.95), rgba(139,44,255,.95));
+    background: linear-gradient(135deg, rgba(255,0,140,1), rgba(0,246,255,1), rgba(141,0,255,1));
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
     pointer-events: none;
-  }
-
-  .header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-      linear-gradient(120deg, transparent 0 35%, rgba(255,255,255,.08) 42%, transparent 48%),
-      radial-gradient(circle at top right, rgba(255,255,255,.08), transparent 28%);
+    animation: borderFlicker 2.8s linear infinite;
   }
 
   .header .label {
     font-size: 11px;
     letter-spacing: .3em;
-    color: #f7ecff;
+    color: #fff2ff;
     margin-bottom: 8px;
     text-transform: uppercase;
-    opacity: .95;
   }
 
   .glitch-wrap {
@@ -435,8 +653,7 @@
     font-weight: 700;
     letter-spacing: -.02em;
     color: #fff;
-    animation: neonText 2.2s ease-in-out infinite;
-    text-shadow: none;
+    animation: neonText 1.5s ease-in-out infinite;
   }
 
   .header h1::before,
@@ -445,19 +662,19 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: .55;
+    opacity: .6;
   }
 
   .header h1::before {
-    color: rgba(255,30,138,.70);
-    transform: translate(2px, 0);
-    animation: glitchA 2.8s infinite linear alternate-reverse;
+    color: rgba(255,0,140,.86);
+    transform: translate(3px, 0);
+    animation: glitchA 2.1s infinite linear alternate-reverse;
   }
 
   .header h1::after {
-    color: rgba(0,234,255,.70);
-    transform: translate(-2px, 0);
-    animation: glitchA 2.2s infinite linear alternate;
+    color: rgba(0,246,255,.86);
+    transform: translate(-3px, 0);
+    animation: glitchA 1.6s infinite linear alternate;
   }
 
   .header p {
@@ -475,27 +692,24 @@
     cursor: pointer;
     overflow: hidden;
     transition: transform .16s, box-shadow .16s, background .16s;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.04) inset,
-      0 0 24px rgba(139,44,255,.14),
-      0 20px 38px rgba(0,0,0,.32);
+    animation: heavyGlow 1.8s ease-in-out infinite;
   }
 
   .drop-zone::before {
     content: "";
     position: absolute;
-    inset: -120px;
+    inset: -140px;
     background: conic-gradient(
       from 0deg,
-      rgba(255,30,138,0) 0deg,
-      rgba(255,30,138,.85) 55deg,
-      rgba(0,234,255,.90) 140deg,
-      rgba(139,44,255,.88) 220deg,
-      rgba(255,30,138,.85) 300deg,
-      rgba(255,30,138,0) 360deg
+      rgba(255,0,140,0) 0deg,
+      rgba(255,0,140,1) 55deg,
+      rgba(0,246,255,1) 140deg,
+      rgba(141,0,255,1) 220deg,
+      rgba(255,240,107,1) 300deg,
+      rgba(255,0,140,0) 360deg
     );
-    animation: spinBorder 5s linear infinite;
-    opacity: .55;
+    animation: spinBorder 3.2s linear infinite;
+    opacity: .82;
     pointer-events: none;
   }
 
@@ -504,9 +718,7 @@
     position: absolute;
     inset: 2px;
     border-radius: 20px;
-    background:
-      linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
     pointer-events: none;
   }
@@ -516,27 +728,23 @@
     z-index: 2;
     border-radius: 14px;
     padding: 22px;
-    border: 2px dashed rgba(255,255,255,.20);
+    border: 2px dashed rgba(255,255,255,.24);
     box-shadow:
-      inset 0 0 18px rgba(255,30,138,.08),
-      0 0 20px rgba(0,234,255,.08);
+      inset 0 0 30px rgba(255,0,140,.12),
+      0 0 26px rgba(0,246,255,.14);
   }
 
   .drop-zone:hover {
-    transform: translateY(-3px) scale(1.004);
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.05) inset,
-      0 0 32px rgba(255,30,138,.20),
-      0 0 44px rgba(0,234,255,.14),
-      0 24px 42px rgba(0,0,0,.38);
+    transform: translateY(-2px);
   }
 
   .drop-zone.drag {
     box-shadow:
-      0 0 0 1px rgba(255,255,255,.05) inset,
-      0 0 36px rgba(255,30,138,.30),
-      0 0 56px rgba(0,234,255,.24),
-      0 24px 46px rgba(0,0,0,.42);
+      0 0 0 1px rgba(255,255,255,.06) inset,
+      0 0 42px rgba(255,0,140,.34),
+      0 0 72px rgba(0,246,255,.28),
+      0 0 120px rgba(141,0,255,.18),
+      0 26px 48px rgba(0,0,0,.44);
   }
 
   .drop-zone .main-text {
@@ -546,7 +754,7 @@
     font-weight: 700;
     color: #fff;
     letter-spacing: .04em;
-    animation: neonText 2s ease-in-out infinite;
+    animation: neonText 1.4s ease-in-out infinite;
   }
 
   .drop-zone .sub-text {
@@ -554,11 +762,84 @@
     z-index: 2;
     margin-top: 9px;
     font-size: 12px;
-    color: #efe7ff;
+    color: #f5eaff;
   }
 
   #file-input {
     display: none;
+  }
+
+  .loading-state {
+    display: none;
+    margin-bottom: 12px;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    border-radius: 14px;
+    padding: 12px 14px;
+  }
+
+  .loading-state.active {
+    display: flex;
+  }
+
+  .loading-ring {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.16);
+    border-top-color: var(--cyan2);
+    border-right-color: var(--pink2);
+    animation: loadingSpin .7s linear infinite;
+    box-shadow:
+      0 0 12px rgba(0,246,255,.28),
+      0 0 18px rgba(255,0,140,.18);
+  }
+
+  .progress-wrap {
+    display: none;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 10px;
+  }
+
+  .progress-wrap.active {
+    display: block;
+  }
+
+  .progress-bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.05);
+  }
+
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(0,246,255,.55), rgba(255,0,140,.55), transparent);
+    animation: progressMove 1.2s linear infinite;
+  }
+
+  .status-line {
+    display: none;
+    margin: 0 0 14px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    animation: pulseGlow 1.8s ease-in-out infinite;
+  }
+
+  .status-line.active {
+    display: block;
   }
 
   .results {
@@ -581,9 +862,7 @@
     text-transform: uppercase;
     padding: 8px 12px;
     border-radius: 999px;
-    box-shadow:
-      0 0 16px rgba(255,30,138,.14),
-      0 0 24px rgba(0,234,255,.08);
+    animation: heavyGlow 2s ease-in-out infinite;
   }
 
   .btn-group {
@@ -604,7 +883,7 @@
     font-family: inherit;
     letter-spacing: .06em;
     transition: transform .12s, filter .12s, opacity .12s;
-    animation: buttonGlow 2.8s ease-in-out infinite;
+    animation: buttonGlow 1.4s ease-in-out infinite;
   }
 
   button::before {
@@ -614,32 +893,25 @@
     left: -50%;
     width: 42%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.5), transparent);
-    transform: skewX(-20deg);
-    animation: shimmer 2.6s linear infinite;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.72), transparent);
+    animation: shimmer 1.5s linear infinite;
     pointer-events: none;
   }
 
   button:hover {
-    transform: translateY(-2px) scale(1.02);
-    filter: brightness(1.06);
-    opacity: .98;
+    transform: translateY(-2px) scale(1.04);
+    filter: brightness(1.12) saturate(1.12);
+    opacity: 1;
   }
 
   .btn-primary {
-    color: #130320;
-    background: linear-gradient(90deg, var(--yellow), #fff8aa, var(--cyan2));
-    box-shadow:
-      0 0 18px rgba(255,240,106,.24),
-      0 8px 22px rgba(0,0,0,.24);
+    color: #12011b;
+    background: linear-gradient(90deg, var(--yellow), #fff8aa, var(--cyan2), var(--pink2));
   }
 
   .btn-danger {
     color: #fff;
-    background: linear-gradient(90deg, var(--red), var(--pink), var(--purple));
-    box-shadow:
-      0 0 18px rgba(255,71,109,.22),
-      0 8px 22px rgba(0,0,0,.24);
+    background: linear-gradient(90deg, var(--red), var(--pink), var(--purple), var(--cyan));
   }
 
   table {
@@ -647,15 +919,12 @@
     border-collapse: collapse;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.04) inset,
-      0 0 22px rgba(139,44,255,.12),
-      0 18px 38px rgba(0,0,0,.32);
+    animation: heavyGlow 2.3s ease-in-out infinite;
   }
 
   thead tr {
-    background: linear-gradient(90deg, rgba(255,30,138,.22), rgba(0,234,255,.18), rgba(139,44,255,.22));
-    border-bottom: 1px solid rgba(255,255,255,.12);
+    background: linear-gradient(90deg, rgba(255,0,140,.28), rgba(0,246,255,.24), rgba(141,0,255,.28));
+    border-bottom: 1px solid rgba(255,255,255,.14);
   }
 
   th {
@@ -666,7 +935,9 @@
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255,30,138,.18);
+    text-shadow:
+      0 0 10px rgba(255,0,140,.30),
+      0 0 20px rgba(0,246,255,.18);
   }
 
   th.right,
@@ -677,11 +948,33 @@
   tbody tr {
     border-bottom: 1px solid rgba(255,255,255,.08);
     transition: background .12s, box-shadow .12s, transform .12s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  tbody tr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 26%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.24), transparent);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  tbody tr.row-enter::before {
+    animation: shimmer 1s ease-out 1;
+    opacity: 1;
   }
 
   tbody tr:hover {
-    background: rgba(255,255,255,.05);
-    box-shadow: inset 0 0 0 999px rgba(255,255,255,.01), 0 0 16px rgba(0,234,255,.06);
+    background: rgba(255,255,255,.06);
+    box-shadow:
+      inset 0 0 0 999px rgba(255,255,255,.02),
+      0 0 22px rgba(0,246,255,.10),
+      0 0 42px rgba(255,0,140,.06);
   }
 
   tbody tr:last-child {
@@ -692,43 +985,47 @@
     animation: rowEnter .65s ease-out both;
   }
 
+  .total-row {
+    animation: totalPulse 2.2s ease-in-out infinite;
+  }
+
   td {
     padding: 14px 16px;
   }
 
   .td-filename {
-    color: #ffeefe;
+    color: #fff0ff;
     font-size: 12px;
   }
 
   .td-adcode {
     color: #fff;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255,30,138,.14);
+    text-shadow: 0 0 12px rgba(255,0,140,.22);
   }
 
   .td-mobile {
     color: var(--green);
     font-weight: 700;
-    text-shadow: 0 0 12px rgba(77,255,136,.28);
+    text-shadow: 0 0 14px rgba(88,255,143,.35);
   }
 
   .td-pc {
     color: var(--cyan2);
     font-weight: 700;
-    text-shadow: 0 0 12px rgba(0,234,255,.24);
+    text-shadow: 0 0 14px rgba(0,246,255,.34);
   }
 
   .td-skip {
     color: #ff9aaa;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255,71,109,.18);
+    text-shadow: 0 0 12px rgba(255,69,106,.24);
   }
 
   .td-total {
     color: #fff08d;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255,240,106,.18);
+    text-shadow: 0 0 12px rgba(255,243,111,.24);
   }
 
   .legend {
@@ -739,20 +1036,18 @@
     padding: 14px 16px;
     border-radius: 16px;
     font-size: 12px;
-    color: #f6edff;
-    box-shadow:
-      0 0 18px rgba(255,30,138,.08),
-      0 12px 28px rgba(0,0,0,.20);
+    color: #fdf1ff;
+    animation: pulseGlow 2.3s ease-in-out infinite;
   }
 
   .dot-green {
     color: var(--green);
-    text-shadow: 0 0 8px rgba(77,255,136,.35);
+    text-shadow: 0 0 10px rgba(88,255,143,.42);
   }
 
   .dot-blue {
     color: var(--cyan2);
-    text-shadow: 0 0 8px rgba(0,234,255,.35);
+    text-shadow: 0 0 10px rgba(0,246,255,.42);
   }
 
   .format-preview {
@@ -760,11 +1055,8 @@
     padding: 22px 24px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.04) inset,
-      0 0 22px rgba(0,234,255,.12),
-      0 16px 34px rgba(0,0,0,.28);
     color: #fff7eb;
+    animation: pulseGlow 2.6s ease-in-out infinite;
   }
 
   .format-preview::before {
@@ -773,7 +1065,7 @@
     inset: 0;
     pointer-events: none;
     background:
-      linear-gradient(120deg, rgba(255,30,138,.08), transparent 30%, rgba(0,234,255,.08) 70%, transparent 100%);
+      linear-gradient(120deg, rgba(255,0,140,.12), transparent 30%, rgba(0,246,255,.12) 70%, transparent 100%);
   }
 
   .format-preview .title {
@@ -783,7 +1075,7 @@
     letter-spacing: .12em;
     text-transform: uppercase;
     color: #fff;
-    animation: neonText 2.2s ease-in-out infinite;
+    animation: neonText 1.8s ease-in-out infinite;
   }
 
   .format-preview table {
@@ -809,15 +1101,17 @@
   .format-preview td.green {
     color: var(--green);
     font-weight: 700;
+    text-shadow: 0 0 10px rgba(88,255,143,.30);
   }
 
   .format-preview td.blue {
     color: var(--cyan2);
     font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,246,255,.30);
   }
 
   .format-preview td.dim {
-    color: rgba(255,255,255,.50);
+    color: rgba(255,255,255,.52);
   }
 
   .format-preview td.kana {
@@ -827,9 +1121,13 @@
 
   .note {
     margin-top: 14px;
-    color: #f2eaff;
+    color: #f7edff;
     font-size: 11px;
-    opacity: .92;
+    opacity: .95;
+  }
+
+  .countup {
+    animation: numberFlash .5s ease-out;
   }
 
   @media (max-width: 760px) {
@@ -854,26 +1152,49 @@
       font-size: 11px;
     }
 
-    .cursor-glow {
+    .cursor-glow,
+    .hud,
+    .edge-deco {
       display: none;
+    }
+
+    .drag-overlay-text {
+      font-size: 24px;
+      letter-spacing: .12em;
     }
   }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/encoding-japanese@2.2.0/encoding.min.js"></script>
 </head>
 <body>
+<div class="noise-overlay"></div>
+<div class="edge-deco edge-top-right"></div>
+<div class="edge-deco edge-bottom-left"></div>
+
 <div class="bg-orb orb1"></div>
 <div class="bg-orb orb2"></div>
 <div class="bg-orb orb3"></div>
+
 <canvas id="particle-canvas"></canvas>
+<canvas id="lightning-canvas"></canvas>
+
 <div class="cursor-glow" id="cursor-glow"></div>
 <div class="screen-flash" id="screen-flash"></div>
 <div class="burst-layer" id="burst-layer"></div>
 
-<div class="shell">
+<div class="drag-overlay" id="drag-overlay">
+  <div class="drag-overlay-inner">
+    <div class="drag-overlay-text">DROP FILES NOW</div>
+    <div class="drag-overlay-sub">NEON INTAKE SEQUENCE ACTIVE</div>
+  </div>
+</div>
 
+<div class="hud hud-top-left" id="hud-top-left">SYSTEM ONLINE</div>
+<div class="hud hud-bottom-right" id="hud-bottom-right">FILES 0 / MOBILE 0 / PC 0</div>
+
+<div class="shell" id="shell">
   <div class="header">
-    <div class="label">Mail CSV Formatter / Hyper Neon Burst Mode</div>
+    <div class="label">Mail CSV Formatter / Omega Hyper Neon Overdrive Max</div>
     <div class="glitch-wrap">
       <h1 data-text="広告CSV整形ツール">広告CSV整形ツール</h1>
     </div>
@@ -887,6 +1208,17 @@
       <div class="sub-text">クリックしてファイル選択も可</div>
     </div>
   </div>
+
+  <div class="loading-state" id="loading-state">
+    <div class="loading-ring"></div>
+    <div id="loading-text">Neon processing...</div>
+  </div>
+
+  <div class="progress-wrap" id="progress-wrap">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="status-line" id="status-line">SYSTEM ONLINE / READY FOR INPUT</div>
 
   <div class="results" id="results">
     <div class="results-header">
@@ -936,9 +1268,8 @@
         </tr>
       </tbody>
     </table>
-    <div class="note">出力ファイル名: 今日の日付.csv（例: 20260331.csv）　文字コード: Shift_JIS（CSVコンマ区切り）</div>
+    <div class="note">出力ファイル名: 今日の日付.csv　文字コード: Shift_JIS（CSVコンマ区切り）</div>
   </div>
-
 </div>
 
 <script>
@@ -1001,6 +1332,23 @@ const REJECT_LIST = new Set([
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+let allResults = [];
+let dragDepth = 0;
+let loadingWordTimer = null;
+
+function escHtml(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function q(s) {
+  return `"${(s || "").replace(/"/g, '""')}"`;
+}
+
+function getTodayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+}
+
 function isMobile(email) {
   const domain = (email.split("@")[1] || "").toLowerCase();
   return MOBILE_DOMAINS.has(domain);
@@ -1035,8 +1383,6 @@ function parseCSV(text) {
   return rows;
 }
 
-let allResults = [];
-
 function processFile(name, text) {
   const originalName = name;
   const baseName = originalName.replace(/\.[^/.]+$/, "");
@@ -1061,15 +1407,6 @@ function processFile(name, text) {
   }
 
   return { name: originalName, adCode, mobile: mobileEmails, pc: pcEmails, skip: skipCount };
-}
-
-function getTodayStr() {
-  const d = new Date();
-  return `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
-}
-
-function q(s) {
-  return `"${(s || "").replace(/"/g, '""')}"`;
 }
 
 function buildMergedCSV(results) {
@@ -1108,36 +1445,43 @@ function triggerBurst(x = window.innerWidth / 2, y = window.innerHeight / 2) {
   layer.appendChild(ring);
   layer.appendChild(core);
 
-  for (let i = 0; i < 26; i++) {
+  for (let i = 0; i < 64; i++) {
     const p = document.createElement("div");
     p.className = "burst-particle";
     p.style.left = x + "px";
     p.style.top = y + "px";
-    const angle = (Math.PI * 2 * i) / 26 + Math.random() * 0.28;
-    const dist = 70 + Math.random() * 120;
+
+    const angle = (Math.PI * 2 * i) / 64 + Math.random() * 0.42;
+    const dist = 90 + Math.random() * 210;
     const dx = Math.cos(angle) * dist + "px";
     const dy = Math.sin(angle) * dist + "px";
     p.style.setProperty("--dx", dx);
     p.style.setProperty("--dy", dy);
 
-    const pick = i % 3;
+    const pick = i % 5;
     if (pick === 0) {
-      p.style.background = "rgba(0,234,255,.95)";
-      p.style.boxShadow = "0 0 12px rgba(0,234,255,.55), 0 0 18px rgba(255,255,255,.22)";
+      p.style.background = "rgba(0,246,255,.98)";
+      p.style.boxShadow = "0 0 14px rgba(0,246,255,.72), 0 0 26px rgba(255,255,255,.28)";
     } else if (pick === 1) {
-      p.style.background = "rgba(255,30,138,.95)";
-      p.style.boxShadow = "0 0 12px rgba(255,30,138,.55), 0 0 18px rgba(255,255,255,.22)";
+      p.style.background = "rgba(255,0,140,.98)";
+      p.style.boxShadow = "0 0 14px rgba(255,0,140,.72), 0 0 26px rgba(255,255,255,.28)";
+    } else if (pick === 2) {
+      p.style.background = "rgba(255,240,107,.98)";
+      p.style.boxShadow = "0 0 14px rgba(255,240,107,.72), 0 0 26px rgba(255,255,255,.28)";
+    } else if (pick === 3) {
+      p.style.background = "rgba(141,0,255,.98)";
+      p.style.boxShadow = "0 0 14px rgba(141,0,255,.72), 0 0 26px rgba(255,255,255,.28)";
     } else {
-      p.style.background = "rgba(255,240,106,.95)";
-      p.style.boxShadow = "0 0 12px rgba(255,240,106,.55), 0 0 18px rgba(255,255,255,.22)";
+      p.style.background = "rgba(88,255,143,.98)";
+      p.style.boxShadow = "0 0 14px rgba(88,255,143,.72), 0 0 26px rgba(255,255,255,.28)";
     }
 
     layer.appendChild(p);
-    setTimeout(() => p.remove(), 820);
+    setTimeout(() => p.remove(), 960);
   }
 
-  setTimeout(() => ring.remove(), 720);
-  setTimeout(() => core.remove(), 720);
+  setTimeout(() => ring.remove(), 860);
+  setTimeout(() => core.remove(), 860);
   triggerScreenFlash();
 }
 
@@ -1151,11 +1495,133 @@ function triggerButtonRipple(x, y) {
   setTimeout(() => ripple.remove(), 560);
 }
 
+function setLoadingState(active) {
+  document.getElementById("loading-state").classList.toggle("active", active);
+  document.getElementById("progress-wrap").classList.toggle("active", active);
+
+  clearInterval(loadingWordTimer);
+  if (active) {
+    const messages = [
+      "Neon processing...",
+      "CSV matrix decoding...",
+      "Signal routing...",
+      "Particle sync...",
+      "Result stream building..."
+    ];
+    let i = 0;
+    document.getElementById("loading-text").textContent = messages[0];
+    loadingWordTimer = setInterval(() => {
+      i = (i + 1) % messages.length;
+      document.getElementById("loading-text").textContent = messages[i];
+    }, 420);
+  }
+}
+
+function setStatus(text, active = true) {
+  const el = document.getElementById("status-line");
+  el.textContent = text;
+  el.classList.toggle("active", active);
+}
+
+function updateHud() {
+  let totalMobile = 0;
+  let totalPc = 0;
+  for (const r of allResults) {
+    totalMobile += r.mobile.length;
+    totalPc += r.pc.length;
+  }
+  document.getElementById("hud-bottom-right").textContent =
+    `FILES ${allResults.length} / MOBILE ${totalMobile} / PC ${totalPc}`;
+}
+
+function animateCount(el, end, duration = 700) {
+  const startTime = performance.now();
+  const start = 0;
+  el.classList.add("countup");
+
+  function tick(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = Math.floor(start + (end - start) * eased);
+    el.textContent = value.toLocaleString();
+    if (progress < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      el.textContent = end.toLocaleString();
+      setTimeout(() => el.classList.remove("countup"), 250);
+    }
+  }
+  requestAnimationFrame(tick);
+}
+
+function renderResults() {
+  const tbody = document.getElementById("results-body");
+  tbody.innerHTML = "";
+  let totalMobile = 0, totalPc = 0, totalSkip = 0;
+
+  allResults.forEach((r, idx) => {
+    totalMobile += r.mobile.length;
+    totalPc += r.pc.length;
+    totalSkip += r.skip;
+
+    const tr = document.createElement("tr");
+    tr.className = "row-enter";
+    tr.style.animationDelay = `${idx * 70}ms`;
+
+    tr.innerHTML = `
+      <td class="td-filename">${escHtml(r.name)}</td>
+      <td class="td-adcode">${escHtml(r.adCode)}</td>
+      <td class="right td-mobile"><span class="num" data-value="${r.mobile.length}">0</span></td>
+      <td class="right td-pc"><span class="num" data-value="${r.pc.length}">0</span></td>
+      <td class="right td-skip"><span class="num" data-value="${r.skip}">0</span></td>
+      <td class="right td-total"><span class="num" data-value="${r.mobile.length + r.pc.length}">0</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  if (allResults.length > 1) {
+    const tr = document.createElement("tr");
+    tr.className = "row-enter total-row";
+    tr.style.animationDelay = `${allResults.length * 70}ms`;
+    tr.style.cssText += ";border-top:2px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05)";
+    tr.innerHTML = `
+      <td style="color:#fff;font-size:11px;letter-spacing:.10em;font-weight:700">TOTAL</td>
+      <td></td>
+      <td class="right td-mobile"><span class="num" data-value="${totalMobile}">0</span></td>
+      <td class="right td-pc"><span class="num" data-value="${totalPc}">0</span></td>
+      <td class="right td-skip"><span class="num" data-value="${totalSkip}">0</span></td>
+      <td class="right td-total"><span class="num" data-value="${totalMobile + totalPc}">0</span></td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  document.getElementById("results-count").textContent = `${allResults.length}ファイル処理完了`;
+  document.getElementById("results").style.display = "block";
+  updateHud();
+
+  setTimeout(() => {
+    tbody.querySelectorAll(".num").forEach((el, i) => {
+      const end = Number(el.dataset.value || 0);
+      setTimeout(() => animateCount(el, end, 720), i * 38);
+    });
+  }, 120);
+}
+
+function clearAll() {
+  allResults = [];
+  document.getElementById("results").style.display = "none";
+  document.getElementById("results-body").innerHTML = "";
+  document.getElementById("drop-text").textContent = "CSVファイルを投入（複数同時OK）";
+  document.getElementById("file-input").value = "";
+  setStatus("SYSTEM RESET / READY FOR INPUT", true);
+  updateHud();
+  triggerBurst(window.innerWidth / 2, window.innerHeight / 2);
+}
+
 function downloadMerged() {
   if (allResults.length === 0) return;
 
   const csv = buildMergedCSV(allResults);
-
   const sjisArray = Encoding.convert(csv, {
     to: "SJIS",
     from: "UNICODE",
@@ -1173,63 +1639,9 @@ function downloadMerged() {
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
-}
 
-function escHtml(s) {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-function renderResults() {
-  const tbody = document.getElementById("results-body");
-  tbody.innerHTML = "";
-  let totalMobile = 0, totalPc = 0, totalSkip = 0;
-
-  allResults.forEach((r, idx) => {
-    totalMobile += r.mobile.length;
-    totalPc += r.pc.length;
-    totalSkip += r.skip;
-
-    const tr = document.createElement("tr");
-    tr.className = "row-enter";
-    tr.style.animationDelay = `${idx * 60}ms`;
-    tr.innerHTML = `
-      <td class="td-filename">${escHtml(r.name)}</td>
-      <td class="td-adcode">${escHtml(r.adCode)}</td>
-      <td class="right td-mobile">${r.mobile.length.toLocaleString()}</td>
-      <td class="right td-pc">${r.pc.length.toLocaleString()}</td>
-      <td class="right td-skip">${r.skip.toLocaleString()}</td>
-      <td class="right td-total">${(r.mobile.length + r.pc.length).toLocaleString()}</td>
-    `;
-    tbody.appendChild(tr);
-  });
-
-  if (allResults.length > 1) {
-    const tr = document.createElement("tr");
-    tr.className = "row-enter";
-    tr.style.animationDelay = `${allResults.length * 60}ms`;
-    tr.style.cssText += ";border-top:2px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05)";
-    tr.innerHTML = `
-      <td style="color:#fff;font-size:11px;letter-spacing:.10em;font-weight:700">TOTAL</td>
-      <td></td>
-      <td class="right td-mobile" style="font-weight:700">${totalMobile.toLocaleString()}</td>
-      <td class="right td-pc" style="font-weight:700">${totalPc.toLocaleString()}</td>
-      <td class="right td-skip" style="font-weight:700">${totalSkip.toLocaleString()}</td>
-      <td class="right td-total" style="font-weight:700">${(totalMobile + totalPc).toLocaleString()}</td>
-    `;
-    tbody.appendChild(tr);
-  }
-
-  document.getElementById("results-count").textContent = `${allResults.length}ファイル処理完了`;
-  document.getElementById("results").style.display = "block";
-}
-
-function clearAll() {
-  allResults = [];
-  document.getElementById("results").style.display = "none";
-  document.getElementById("results-body").innerHTML = "";
-  document.getElementById("drop-text").textContent = "CSVファイルを投入（複数同時OK）";
-  document.getElementById("file-input").value = "";
-  triggerBurst(window.innerWidth / 2, window.innerHeight / 2);
+  setStatus("EXPORT COMPLETE / SHIFT_JIS PACKAGE READY", true);
+  triggerScreenFlash();
 }
 
 async function readFileSmart(file) {
@@ -1256,7 +1668,10 @@ async function handleFiles(files, burstX = window.innerWidth / 2, burstY = windo
   const csvFiles = Array.from(files).filter(f => f.name.toLowerCase().endsWith(".csv"));
   if (!csvFiles.length) return;
 
-  document.getElementById("drop-text").textContent = "ネオン処理中...";
+  const dropText = document.getElementById("drop-text");
+  dropText.textContent = "ネオン処理中...";
+  setLoadingState(true);
+  setStatus("NEON PARSER ACTIVE / PROCESSING INPUT", true);
   triggerBurst(burstX, burstY);
 
   const existingNames = new Set(allResults.map(r => r.name));
@@ -1274,27 +1689,49 @@ async function handleFiles(files, burstX = window.innerWidth / 2, burstY = windo
   );
 
   allResults = [...allResults, ...processed.filter(Boolean)];
-  document.getElementById("drop-text").textContent = "さらに追加登録できます";
+  dropText.textContent = "さらに追加登録できます";
+  setLoadingState(false);
+  setStatus("SYSTEM ONLINE / FILE MAP UPDATED", true);
   renderResults();
 }
 
 const dropZone = document.getElementById("drop-zone");
 const fileInput = document.getElementById("file-input");
+const dragOverlay = document.getElementById("drag-overlay");
 
 dropZone.addEventListener("click", () => fileInput.click());
-fileInput.addEventListener("change", e => handleFiles(e.target.files, window.innerWidth / 2, window.innerHeight / 2));
+fileInput.addEventListener("change", e => {
+  handleFiles(e.target.files, window.innerWidth / 2, window.innerHeight / 2);
+});
 
-dropZone.addEventListener("dragover", e => {
+window.addEventListener("dragenter", (e) => {
   e.preventDefault();
+  dragDepth++;
+  dragOverlay.classList.add("active");
+  dropZone.classList.add("drag");
+  setStatus("DROP SEQUENCE ARMED", true);
+});
+
+window.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  dragOverlay.classList.add("active");
   dropZone.classList.add("drag");
 });
 
-dropZone.addEventListener("dragleave", () => {
-  dropZone.classList.remove("drag");
+window.addEventListener("dragleave", (e) => {
+  dragDepth--;
+  if (dragDepth <= 0) {
+    dragDepth = 0;
+    dragOverlay.classList.remove("active");
+    dropZone.classList.remove("drag");
+    setStatus("SYSTEM ONLINE / READY FOR INPUT", true);
+  }
 });
 
-dropZone.addEventListener("drop", e => {
+window.addEventListener("drop", (e) => {
   e.preventDefault();
+  dragDepth = 0;
+  dragOverlay.classList.remove("active");
   dropZone.classList.remove("drag");
   handleFiles(e.dataTransfer.files, e.clientX, e.clientY);
 });
@@ -1306,22 +1743,24 @@ document.addEventListener("click", (e) => {
 });
 
 const cursorGlow = document.getElementById("cursor-glow");
+
 window.addEventListener("mousemove", (e) => {
   cursorGlow.style.left = e.clientX + "px";
   cursorGlow.style.top = e.clientY + "px";
 });
 
-const canvas = document.getElementById("particle-canvas");
-const ctx = canvas.getContext("2d");
+/* particle background */
+const particleCanvas = document.getElementById("particle-canvas");
+const pctx = particleCanvas.getContext("2d");
 let particles = [];
 let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+function resizeParticleCanvas() {
+  particleCanvas.width = window.innerWidth;
+  particleCanvas.height = window.innerHeight;
 }
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
+resizeParticleCanvas();
+window.addEventListener("resize", resizeParticleCanvas);
 
 window.addEventListener("mousemove", (e) => {
   mouse.x = e.clientX;
@@ -1329,17 +1768,17 @@ window.addEventListener("mousemove", (e) => {
 });
 
 function createParticles() {
-  const count = Math.min(90, Math.max(40, Math.floor(window.innerWidth / 18)));
+  const count = Math.min(220, Math.max(90, Math.floor(window.innerWidth / 8)));
   particles = [];
   for (let i = 0; i < count; i++) {
     particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.55,
-      vy: (Math.random() - 0.5) * 0.55,
-      r: Math.random() * 2.2 + 0.8,
+      x: Math.random() * particleCanvas.width,
+      y: Math.random() * particleCanvas.height,
+      vx: (Math.random() - 0.5) * 0.7,
+      vy: (Math.random() - 0.5) * 0.7,
+      r: Math.random() * 2.6 + 0.8,
       hue: Math.random() > 0.5 ? "cyan" : (Math.random() > 0.5 ? "pink" : "purple"),
-      alpha: Math.random() * 0.45 + 0.18
+      alpha: Math.random() * 0.55 + 0.16
     });
   }
 }
@@ -1347,41 +1786,41 @@ createParticles();
 window.addEventListener("resize", createParticles);
 
 function getParticleColor(type, alpha) {
-  if (type === "cyan") return `rgba(0,234,255,${alpha})`;
-  if (type === "pink") return `rgba(255,30,138,${alpha})`;
-  return `rgba(139,44,255,${alpha})`;
+  if (type === "cyan") return `rgba(0,246,255,${alpha})`;
+  if (type === "pink") return `rgba(255,0,140,${alpha})`;
+  return `rgba(141,0,255,${alpha})`;
 }
 
 function animateParticles() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  pctx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
 
   for (const p of particles) {
     const dx = mouse.x - p.x;
     const dy = mouse.y - p.y;
     const dist = Math.sqrt(dx * dx + dy * dy);
 
-    if (dist < 140) {
-      p.x -= dx * 0.002;
-      p.y -= dy * 0.002;
+    if (dist < 180) {
+      p.x -= dx * 0.0028;
+      p.y -= dy * 0.0028;
     }
 
     p.x += p.vx;
     p.y += p.vy;
 
-    if (p.x < -20) p.x = canvas.width + 20;
-    if (p.x > canvas.width + 20) p.x = -20;
-    if (p.y < -20) p.y = canvas.height + 20;
-    if (p.y > canvas.height + 20) p.y = -20;
+    if (p.x < -20) p.x = particleCanvas.width + 20;
+    if (p.x > particleCanvas.width + 20) p.x = -20;
+    if (p.y < -20) p.y = particleCanvas.height + 20;
+    if (p.y > particleCanvas.height + 20) p.y = -20;
 
-    ctx.beginPath();
-    ctx.fillStyle = getParticleColor(p.hue, p.alpha);
-    ctx.shadowBlur = 14;
-    ctx.shadowColor = getParticleColor(p.hue, 0.9);
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fill();
+    pctx.beginPath();
+    pctx.fillStyle = getParticleColor(p.hue, p.alpha);
+    pctx.shadowBlur = 18;
+    pctx.shadowColor = getParticleColor(p.hue, 0.96);
+    pctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    pctx.fill();
   }
 
-  ctx.shadowBlur = 0;
+  pctx.shadowBlur = 0;
 
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
@@ -1391,12 +1830,12 @@ function animateParticles() {
       const dy = a.y - b.y;
       const d = Math.sqrt(dx * dx + dy * dy);
       if (d < 120) {
-        ctx.beginPath();
-        ctx.strokeStyle = `rgba(255,255,255,${(1 - d / 120) * 0.08})`;
-        ctx.lineWidth = 1;
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
-        ctx.stroke();
+        pctx.beginPath();
+        pctx.strokeStyle = `rgba(255,255,255,${(1 - d / 120) * 0.1})`;
+        pctx.lineWidth = 1;
+        pctx.moveTo(a.x, a.y);
+        pctx.lineTo(b.x, b.y);
+        pctx.stroke();
       }
     }
   }
@@ -1404,6 +1843,66 @@ function animateParticles() {
   requestAnimationFrame(animateParticles);
 }
 animateParticles();
+
+/* lightning */
+const lightningCanvas = document.getElementById("lightning-canvas");
+const lctx = lightningCanvas.getContext("2d");
+
+function resizeLightningCanvas() {
+  lightningCanvas.width = window.innerWidth;
+  lightningCanvas.height = window.innerHeight;
+}
+resizeLightningCanvas();
+window.addEventListener("resize", resizeLightningCanvas);
+
+function drawLightningPath(x1, y1, x2, y2, displace, detail) {
+  if (displace < detail) {
+    lctx.beginPath();
+    lctx.moveTo(x1, y1);
+    lctx.lineTo(x2, y2);
+    lctx.stroke();
+    return;
+  }
+  const midX = (x1 + x2) / 2 + (Math.random() - 0.5) * displace;
+  const midY = (y1 + y2) / 2 + (Math.random() - 0.5) * displace;
+  drawLightningPath(x1, y1, midX, midY, displace / 2, detail);
+  drawLightningPath(midX, midY, x2, y2, displace / 2, detail);
+}
+
+function triggerLightning() {
+  lctx.clearRect(0, 0, lightningCanvas.width, lightningCanvas.height);
+
+  const startX = Math.random() * lightningCanvas.width;
+  const endX = startX + (Math.random() - 0.5) * 260;
+
+  lctx.strokeStyle = "rgba(180,255,255,.96)";
+  lctx.lineWidth = 2.4;
+  lctx.shadowBlur = 18;
+  lctx.shadowColor = "rgba(0,246,255,.95)";
+  drawLightningPath(startX, 0, endX, lightningCanvas.height * (0.42 + Math.random() * 0.3), 110, 8);
+
+  lctx.strokeStyle = "rgba(255,180,255,.58)";
+  lctx.lineWidth = 1.2;
+  lctx.shadowBlur = 10;
+  lctx.shadowColor = "rgba(255,0,140,.65)";
+  drawLightningPath(startX + 10, 0, endX + 16, lightningCanvas.height * (0.42 + Math.random() * 0.3), 96, 8);
+
+  lightningCanvas.style.animation = "none";
+  void lightningCanvas.offsetWidth;
+  lightningCanvas.style.animation = "lightningFlash 1.2s ease-out";
+
+  setTimeout(() => {
+    lctx.clearRect(0, 0, lightningCanvas.width, lightningCanvas.height);
+    lightningCanvas.style.animation = "";
+  }, 1200);
+}
+
+setInterval(() => {
+  if (Math.random() > 0.38) triggerLightning();
+}, 2200);
+
+updateHud();
+setStatus("SYSTEM ONLINE / READY FOR INPUT", true);
 </script>
 </body>
 </html>
